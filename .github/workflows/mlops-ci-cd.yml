@@ -60,7 +60,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}california-housing-app:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/california-housing-app:latest
 
       # Step 9: Deploy Docker Container
       - name: Deploy Docker Container
