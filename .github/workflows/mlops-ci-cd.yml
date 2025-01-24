@@ -61,7 +61,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/california-housing-app:latest
 
-      # Step 9: Deploy Docker Container
+      # Step 9: Deploy Docker Containers
       - name: Deploy Docker Container
         run: |
           docker container stop california-housing-app || true
