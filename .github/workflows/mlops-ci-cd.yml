@@ -54,12 +54,13 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       # Step 8: Build the Docker images
+
       - name: Build Docker Image
         uses: docker/build-push-action@v4
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/california-housing-app:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}california-housing-app:latest
 
       # Step 9: Deploy Docker Container
       - name: Deploy Docker Container
